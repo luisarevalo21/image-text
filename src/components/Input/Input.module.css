@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  border: 4px red solid;
+  /* border: 4px red solid; */
   margin-bottom: 10px;
 }
 .Label {
@@ -49,9 +49,8 @@
   /* color: #202124; */
   min-width: 0%;
 }
-.Dropdown {
+/* .Dropdown {
   /* width: 100% !important; */
-}
 
 .TextArea {
   background-color: #d1d1d1;
