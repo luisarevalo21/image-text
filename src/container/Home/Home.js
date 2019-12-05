@@ -7,7 +7,8 @@ import axios from "../../axios";
 import DropDown from "../../components/Dropdown/Dropdown";
 import classes from "./Home.module.css";
 import Form from "../../container/Form/Form";
-
+import Modal from "../../components/Modal/Modal";
+// import Spinner from "../../components/Spinner/Spinner";
 // import firebase from "../../config/firebase";
 // const months = [
 //   "January",
@@ -35,7 +36,8 @@ class Home extends Component {
       { value: "Mystic", label: "Mystic" },
       { value: "Instinct", label: "Instinct" },
       { value: "Valor", label: "Valor" }
-    ]
+    ],
+    loading: false
     // selectedValue: null
   };
 
@@ -173,6 +175,7 @@ class Home extends Component {
   //   }
 
   fetchActiveExGyms = () => {
+    this.setState({ loading: true });
     // if (firebase.auth().currentUser)
     //   firebase
     //     .auth()
@@ -208,7 +211,7 @@ class Home extends Component {
           };
         });
 
-        this.setState({ activeExGymOptions });
+        this.setState({ activeExGymOptions, loading: false });
       })
       .catch(error => console.log(error));
     //});
@@ -281,6 +284,7 @@ class Home extends Component {
   render() {
     // console.log("this.state", this.state.googleResponse);
     // const { exDateInformation } = this.state;
+    let spinner = null;
     const { selectedGymOption } = this.state;
     let exImage = null;
     let form = null;
@@ -298,6 +302,10 @@ class Home extends Component {
       );
     }
 
+    if (this.state.loading) {
+      spinner = <Modal show={this.state.loading} />;
+    }
+
     // let module = null;
     // if (true) {
     //   module = <PopUpComponent posting={true} />;
@@ -305,6 +313,7 @@ class Home extends Component {
 
     return (
       <div>
+        {spinner}
         <h1 className={classes.Header}>Ex Raid Sign Up</h1>
 
         <div className={classes.Dropdown}>
