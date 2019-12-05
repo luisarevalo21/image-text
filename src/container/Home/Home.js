@@ -1,16 +1,13 @@
 import React, { Component } from "react";
 import vision from "react-cloud-vision-api";
 import firebase from "../../config/firebase";
-import key from "../../config/environment";
 import image from "../../assets/images/myphoto.jpg";
 import FileBase64 from "react-file-base64";
 import axios from "../../axios";
 import DropDown from "../../components/Dropdown/Dropdown";
 import classes from "./Home.module.css";
 import Form from "../../container/Form/Form";
-import Test from "../Test/Test";
-import PopUpComponent from "../../components/PopUpComponent/PopUpComponent";
-const storage = firebase.storage().ref();
+
 // import firebase from "../../config/firebase";
 // const months = [
 //   "January",

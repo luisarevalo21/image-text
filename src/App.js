@@ -9,6 +9,11 @@ import { Switch, Route } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 import DashBoard from "./container/Dashboard/Dashboard";
 import axios from "./axios";
+
+// const API_KEY = process.env.REACT_APP_API_KEY;
+
+// console.log("testing", API_KEY);
+
 class App extends Component {
   state = {
     authenticated: false,
