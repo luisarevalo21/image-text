@@ -165,6 +165,15 @@ class Form extends Component {
         validation: {},
         valid: false
       },
+      lateGroup: {
+        type: "radio2",
+        value: "",
+        title: "Would you like to attend the late group?",
+        checked: "",
+        passFromFriendOptions: ["Yes", "No"],
+        validation: {},
+        valid: false
+      },
       comments: {
         type: "text",
         value: "",
@@ -262,7 +271,11 @@ class Form extends Component {
 
     if (type === "teamName") {
       copyData[type].value = event.value;
-    } else if (type === "attendance" || type === "passFromFriend") {
+    } else if (
+      type === "attendance" ||
+      type === "passFromFriend" ||
+      type === "lateGroup"
+    ) {
       copyData[type].value = event.target.value;
       copyData[type].checked = event.target.value;
     } else {
