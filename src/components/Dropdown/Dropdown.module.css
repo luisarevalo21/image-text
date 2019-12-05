@@ -1,0 +1,29 @@
+.Dropdown {
+  /* width: auto; */
+  /* margin: 0 auto; */
+  /* min-height: 50px; */
+
+  /* height: 40px !important; */
+
+  /* width: 50%;
+  margin: 0 auto; */
+}
+
+.Layout {
+  /* width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 10px; */
+}
+.Label {
+  text-align: left;
+  color: rgb(235, 235, 235);
+  font-size: 1.2rem;
+  /* margin-bottom: 3%; */
+}
+
+@media (max-width: 500px) {
+  .Layout {
+    width: 100%;
+  }
+}

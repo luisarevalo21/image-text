@@ -1,0 +1,52 @@
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 15px;
+  /* border: 3px solid red; */
+}
+.Header {
+  color: rgb(235, 235, 235);
+}
+
+.Input {
+  color: rgb(235, 235, 235);
+}
+
+.Button {
+  border-radius: 3px;
+
+  width: auto;
+  /* margin: 0 auto; */
+  background-color: #46b5d1;
+  color: white;
+  font-style: bold;
+  font-size: 14px;
+  margin: 20px;
+}
+
+.Button:disabled {
+  color: lightgray;
+  background: white;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .Dashboard {
+    /* background: rgb(225, 221, 221); */
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .Header {
+    color: white;
+  }
+  .Input {
+    color: black;
+    background: rgb(213, 211, 211);
+    /* border: 2px red solid; */
+  }
+}

@@ -2,16 +2,34 @@
   "name": "image-text",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://luisarevalo21.github.io/image-text/",
   "dependencies": {
+    "axios": "^0.19.0",
+    "base64-img": "^1.0.4",
+    "bootstrap": "^4.3.1",
+    "firebase": "^7.5.0",
+    "gh-pages": "^2.1.1",
+    "image-to-base64": "^2.0.1",
+    "mdbreact": "^4.23.0",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-cloud-vision-api": "^0.3.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-dropdown": "^1.6.4",
+    "react-file-base64": "^1.0.3",
+    "react-firebaseui": "^4.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-select": "^3.0.8",
+    "semantic-ui-react": "^0.88.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

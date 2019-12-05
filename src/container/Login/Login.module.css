@@ -1,0 +1,10 @@
+.Login {
+  background: rgb(250, 229, 229);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  min-height: 200px;
+}
+.Header {
+  color: rgb(109, 109, 109);
+}

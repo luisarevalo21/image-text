@@ -1,0 +1,21 @@
+.Button {
+  color: white;
+
+  background-color: rgb(230, 75, 75);
+  border-radius: 5px;
+  letter-spacing: 3px;
+  margin-left: auto;
+  font-size: 0.8rem;
+  cursor: pointer;
+  /* text-decoration: none;
+
+  float: right;
+  padding: 12px;
+  margin: 15px;
+  color: white;
+  width: 25px;
+  background-color: black;
+  transition: width 0.35s;
+  -webkit-transition: width 0.35s;
+  overflow: hidden; */
+}

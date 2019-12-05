@@ -1,0 +1,59 @@
+.Input {
+  min-height: 30px;
+  padding: 5px;
+  background-color: #d1d1d1;
+}
+
+.Invalid {
+  border: 1px solid red;
+  background-color: salmon;
+}
+
+.Radio {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 4px red solid;
+  margin-bottom: 10px;
+}
+.Label {
+  /* min-height: 24px; */
+  /* padding: 0.5em 0.5em 0.5em 0; */
+  text-align: left;
+  margin: 0;
+  color: rgb(235, 235, 235);
+  margin-bottom: 16px;
+  /* margin-bottom: 3%; */
+}
+
+.Layout {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  /* border: 4px red solid; */
+}
+.Span {
+  /* letter-spacing: 0.2px;
+  line-height: 20px;
+  margin-left: 0.75em;
+  display: in;
+
+  white-space: pre-line; */
+  margin-left: 0.75em;
+  color: rgb(235, 235, 235);
+  word-wrap: break-word !important;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  /* color: #202124; */
+  min-width: 0%;
+}
+.Dropdown {
+  /* width: 100% !important; */
+}
+
+.TextArea {
+  background-color: #d1d1d1;
+  min-height: 30px;
+}
