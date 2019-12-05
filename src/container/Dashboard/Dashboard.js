@@ -126,8 +126,9 @@ class Dashboard extends Component {
         }
       ]
     });
+    const key = process.env.REACT_APP_API_KEY;
     let response = await fetch(
-      "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyDC3ApKxjcjwBVdyVyFKE7N3VOeyEMjY34",
+      "https://vision.googleapis.com/v1/images:annotate?key=" + key,
       {
         headers: {
           Accept: "application/json",
@@ -256,7 +257,6 @@ class Dashboard extends Component {
     // }
   };
   render() {
-    console.log("this.state", this.state);
     let loadModule = null;
     if (this.state.posting) {
       loadModule = (
