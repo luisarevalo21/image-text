@@ -9,7 +9,7 @@ class Login extends Component {
   uiConfig = {
     signInFlow: "popup",
     signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
-    signInSuccessUrl: this.props.location,
+    signInSuccessUrl: "/",
 
     callbacks: {
       signInSuccessWithAuthResult: function(authResult, redirectUrl) {
@@ -27,7 +27,7 @@ class Login extends Component {
             .catch(error => console.log("error occrued", error));
         }
 
-        return true;
+        // return true;
         // User successfully signed in.
         // Return type determines whether we continue the redirect automatically
         // or whether we leave that to developer to handle.
@@ -38,10 +38,10 @@ class Login extends Component {
 
   signInSuccess = () => {
     console.log("theuser is");
-    // return <Redirect to="/" />;
+    return <Redirect to="/image-text" />;
   };
   render() {
-    // console.log("process ", this.props.history.push());
+    // console.log("process ", this.props.history);
     return (
       <div className={classes.Login}>
         <h3 className={classes.Header}> Login Page</h3>
