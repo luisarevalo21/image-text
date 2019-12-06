@@ -9,7 +9,7 @@ class Login extends Component {
   uiConfig = {
     signInFlow: "popup",
     signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
-    signInSuccessUrl: "/",
+    signInSuccessUrl: this.props.location,
 
     callbacks: {
       signInSuccessWithAuthResult: function(authResult, redirectUrl) {
@@ -38,9 +38,10 @@ class Login extends Component {
 
   signInSuccess = () => {
     console.log("theuser is");
-    return <Redirect to="/" />;
+    // return <Redirect to="/" />;
   };
   render() {
+    // console.log("process ", this.props.history.push());
     return (
       <div className={classes.Login}>
         <h3 className={classes.Header}> Login Page</h3>
